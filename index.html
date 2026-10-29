@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Portfolio | Data Analysis & Supply Chain</title>
+<title>Devni Bandara | Data Analysis &amp; Supply Chain</title>
 <style>
-:root{--navy:#0B2545;--navy2:#13315C;--sky:#8DA9C4;--bg:#fff;--soft:#EEF4FA;--ink:#1b2a3a;--mut:#5a6b7d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1628;--soft:#11233d;--ink:#e6edf5;--mut:#9fb3c8}}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
-header.hero{background:var(--navy);color:#fff;padding:64px 24px 56px}
-.wrap{max-width:960px;margin:0 auto}
-.hero h1{margin:0 0 6px;font-size:2.4rem}.hero p{margin:6px 0;color:#cfdcea;max-width:640px}
-.tag{display:inline-block;border:1px solid var(--sky);color:var(--sky);padding:2px 12px;border-radius:99px;font-size:.8rem;margin:12px 8px 0 0}
-section{padding:40px 24px}section:nth-of-type(even){background:var(--soft)}
-h2{color:var(--navy2);border-left:5px solid var(--navy);padding-left:12px;margin:0 0 20px}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:#cfe0f2;border-color:var(--sky)}}
-.cards{display:flex;flex-wrap:wrap;gap:16px}
-.card{flex:1 1 280px;background:var(--bg);border:1px solid #d3deea;border-top:4px solid var(--navy);border-radius:8px;padding:16px}
-.card h3{margin:0 0 6px;font-size:1.05rem}.card p,.card li{font-size:.92rem;color:var(--mut);margin:4px 0}
-.card ul{padding-left:18px;margin:6px 0}.stack{font-size:.78rem;color:var(--navy2);font-weight:600}
-.skills span{display:inline-block;background:var(--navy);color:#fff;border-radius:6px;padding:4px 12px;margin:0 6px 8px 0;font-size:.85rem}
-.ph{}
-.btn{display:inline-block;margin-top:20px;background:#fff;color:var(--navy);font-weight:600;text-decoration:none;padding:10px 22px;border-radius:6px}.btn:hover{background:var(--sky)}
-footer{background:var(--navy);color:#cfdcea;padding:28px 24px;text-align:center;font-size:.9rem}
-@media print{.btn{display:none}@page{size:A4;margin:0}body{font-size:10.5px}header.hero{padding:28px 32px}.hero h1{font-size:26px}section{padding:16px 32px}.card{break-inside:avoid;padding:10px}h2{margin-bottom:10px}.ph{background:none;color:inherit}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+:root{--navy:#0B2545;--navy2:#13315C;--sky:#8DA9C4;--gold:#C9A96E;--bg:#fff;--soft:#F3F6FA;--ink:#1b2a3a;--mut:#5a6b7d;--line:#d6e0ec;--serif:Georgia,"Times New Roman",serif;--sans:"Segoe UI",Inter,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1628;--soft:#0f2038;--ink:#e6edf5;--mut:#a3b6ca;--line:#243b5a}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:980px;margin:0 auto}
+.hero{background:radial-gradient(circle at 85% 15%,#1d4278 0,transparent 45%),linear-gradient(135deg,#071a33,var(--navy) 60%,var(--navy2));color:#fff;padding:84px 24px 72px;border-bottom:4px solid var(--gold)}
+.eyebrow{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:.78rem;font-weight:600;margin:0 0 10px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:3.2rem;line-height:1.1;margin:0 0 14px}
+.hero .lead{color:#cfdcea;max-width:620px;font-size:1.05rem;margin:0 0 6px}
+.tag{display:inline-block;border:1px solid rgba(201,169,110,.7);color:#e9d9b8;padding:3px 14px;border-radius:99px;font-size:.78rem;margin:16px 8px 0 0}
+.btn{display:inline-block;margin-top:26px;background:var(--gold);color:var(--navy);font-weight:600;text-decoration:none;padding:11px 26px;border-radius:99px;transition:.2s}
+.btn:hover{background:#fff;transform:translateY(-2px)}
+section{padding:56px 24px}section:nth-of-type(even){background:var(--soft)}
+h2{font-family:var(--serif);font-weight:400;font-size:1.9rem;color:var(--navy);margin:0 0 28px;position:relative;padding-bottom:12px}
+h2::after{content:"";position:absolute;left:0;bottom:0;width:56px;height:3px;background:var(--gold)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) h2{color:#e6edf5}}
+.skills span{display:inline-block;border:1px solid var(--navy2);color:var(--navy2);border-radius:99px;padding:5px 16px;margin:0 8px 10px 0;font-size:.86rem;background:var(--bg)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .skills span{color:#cfe0f2;border-color:var(--sky)}}
+.cards{display:flex;flex-wrap:wrap;gap:20px}
+.card{flex:1 1 290px;background:var(--bg);border:1px solid var(--line);border-top:3px solid var(--navy);border-radius:10px;padding:20px;box-shadow:0 6px 18px rgba(11,37,69,.06);transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 26px rgba(11,37,69,.14);border-top-color:var(--gold)}
+.card h3{font-family:var(--serif);font-weight:400;font-size:1.15rem;margin:0 0 8px}
+.card p,.card li{font-size:.92rem;color:var(--mut);margin:5px 0}.card ul{padding-left:18px;margin:8px 0}
+.stack{font-size:.76rem;color:var(--navy2);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-top:10px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .stack{color:var(--gold)}}
+.tl{border-left:2px solid var(--line);padding-left:30px;margin-left:6px}
+.job{position:relative;margin-bottom:26px}
+.job::before{content:"";position:absolute;left:-38px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid var(--bg)}
+.job h3{font-family:var(--serif);font-weight:400;font-size:1.2rem;margin:0}
+.job .org{color:var(--navy2);font-weight:600;font-size:.95rem}
+.job .date{color:var(--mut);font-size:.82rem;letter-spacing:.04em;margin-bottom:6px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .job .org{color:var(--sky)}}
+.job ul{margin:8px 0 0;padding-left:18px}.job li{font-size:.92rem;color:var(--mut);margin:4px 0}
+.edu{border-bottom:1px solid var(--line);padding:12px 0}.edu:last-child{border:0}
+.edu b{font-family:var(--serif);font-weight:400;font-size:1.05rem}
+.edu span{display:block;color:var(--mut);font-size:.88rem}
+footer{background:var(--navy);color:#cfdcea;padding:40px 24px;text-align:center;border-top:4px solid var(--gold)}
+footer b{font-family:var(--serif);font-weight:400;font-size:1.4rem;color:#fff}
+footer a{color:var(--gold);text-decoration:none;margin:0 10px}footer a:hover{text-decoration:underline}
+@media (max-width:600px){.hero h1{font-size:2.3rem}}
+@media print{@page{size:A4;margin:0}body{font-size:10.5px}.hero{padding:32px 36px 28px}.hero h1{font-size:30px}.btn{display:none}section{padding:18px 36px}h2{font-size:18px;margin-bottom:14px}.card,.job,.edu{break-inside:avoid;box-shadow:none}.card{padding:12px}.job{margin-bottom:14px}footer{padding:18px}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style></head><body>
 <header class="hero"><div class="wrap">
-<h1><span class="ph">Devni Nikeshala Bandara</span></h1>
-<p><b>Data Analyst | Supply Chain &amp; Warehouse Operations</b></p>
-<p>I turn warehouse data into automated tools, clear reports and faster decisions, using Excel/VBA, SAP, WMS exports and web development.</p>
+<p class="eyebrow">Data Analysis &middot; Supply Chain</p>
+<h1>Devni Nikeshala Bandara</h1>
+<p class="lead"><b>Data Analyst | Supply Chain &amp; Warehouse Operations</b></p>
+<p class="lead">I turn warehouse data into automated tools, clear reports and faster decisions, using Excel/VBA, SAP, WMS exports and web development.</p>
 <span class="tag">Data Analysis</span><span class="tag">Supply Chain</span><span class="tag">Automation</span><br>
 <a class="btn" href="Portfolio.pdf" download>Download PDF Portfolio</a>
 </div></header>
@@ -35,7 +58,7 @@ footer{background:var(--navy);color:#cfdcea;padding:28px 24px;text-align:center;
 <p>I work in warehouse operations and build the tools that keep them accurate: reconciliations, cycle counts, replenishment planning and reporting. My focus is moving from running these processes to analysing and improving them with data.</p></div></section>
 
 <section><div class="wrap"><h2>Skills</h2><div class="skills">
-<span>Advanced Excel</span><span>VBA Macros</span><span>SAP</span><span>WMS</span><span>Pivot Tables &amp; Dashboards</span><span>Inventory Control</span><span>FIFO Replenishment</span><span>Reconciliation</span><span>JavaScript</span><span>SQL</span><span>Power BI </span></div></div></section>
+<span>Advanced Excel</span><span>VBA Macros</span><span>SAP</span><span>WMS</span><span>Pivot Tables &amp; Dashboards</span><span>Inventory Control</span><span>FIFO Replenishment</span><span>Reconciliation</span><span>JavaScript</span><span>SQL</span><span>Power BI</span></div></div></section>
 
 <section><div class="wrap"><h2>Featured Projects</h2><div class="cards">
 <div class="card"><h3>Replenishment Planning System</h3><p>Excel/VBA tool that checks pick-face stock against Min/Max levels and builds FIFO transfer plans from a CB Report and Daily Picking List.</p><ul><li>Header-driven column reading; composite SKU + Case + Lot keys</li><li>Pack-size rounding and printable daily plan</li><li>Diagnosis log explaining every decision</li></ul><div class="stack">Excel · VBA · WMS data</div></div>
@@ -47,16 +70,52 @@ footer{background:var(--navy);color:#cfdcea;padding:28px 24px;text-align:center;
 <div class="card"><h3>Shell Savings: 100-Day Tracker</h3><p>Web app for a 100-day savings challenge with login and progress tracking, extended so users can set their own goal amount and number of days.</p><div class="stack">Web app · Supabase</div></div>
 </div></div></section>
 
-<section><div class="wrap"><h2>Experience</h2><div class="card"><h3><span class="ph">Operation Assistant</span>, <span class="ph">Hayleys Advantis 3PL</span> <span class="ph">From October 2024 to now. </span></h3><ul><li>Warehouse operations: inventory accuracy, cycle counting, GRN and dispatch processes. </li><li>Work with SAP, CoreBrain WMS support operational visibility.</li><li>Support cycle-count planning, count-sheet preparation, variance follow-up and reconciliation.</li><li>Develop and refine Excel formulas/macros to reduce repetitive work and improve consistency.</li><li>Coordinate system issues and transaction access concerns with relevant support teams.</li><li>Built and maintain Excel/VBA automation and document management tools. </li><li><span class="ph"></span></li></ul></div></div></section>
+<section><div class="wrap"><h2>Experience</h2><div class="tl">
+<div class="job"><h3>Operation Assistant</h3><div class="org">Hayleys Advantis 3PL</div><div class="date">Oct 2024 – Present</div><ul>
+<li>Warehouse operations: inventory accuracy, cycle counting, GRN and dispatch processes.</li>
+<li>Work with SAP and CoreBrain WMS to support operational visibility.</li>
+<li>Support cycle-count planning, count-sheet preparation, variance follow-up and reconciliation.</li>
+<li>Develop and refine Excel formulas and macros to reduce repetitive work and improve consistency.</li>
+<li>Coordinate system issues and transaction access concerns with the relevant support teams.</li>
+<li>Build and maintain Excel/VBA automation and document management tools.</li></ul></div>
 
+<div class="job"><h3>Head of Administration</h3><div class="org">Institute of Psychological Studies</div><div class="date">Oct 2022 – May 2024</div><ul>
+<li>Executed tasks related to Human Resources, Finance and general office administration.</li>
+<li>Provided administrative support to the lecture panel.</li>
+<li>Managed the student life cycle from registration to graduation.</li>
+<li>Handled queries and the complaints procedure.</li>
+<li>Coordinated examinations and the assessment process.</li>
+<li>Assisted in developing and implementing office policies and procedures.</li>
+<li>Monitored office inventory levels and placed orders as necessary.</li>
+<li>Coordinated office space planning and layout.</li>
+<li>Handled office communications, including email and phone.</li></ul></div>
 
-<section><div class="wrap"><div class="card"><h3><span class="ph">Head of Administarion</span>, <span class="ph">Institute of Psychological Studies</span> <span class="ph">From October 2022 to May 2024 </span></h3><ul><li>Executing tasks related to the Human Resources,Finance and General office administration</li><li>Provide administrative support to the lecture paanel.</li><li>Manage student's life cycle from registraion to the Graduation</li><li>Deal with the quarries and complaints procedures</li><li>Coordination examinations and assessment process</li><li>Assisted in developing and implementing office policies and procedures</li><li><span class="ph">Assisted in developing and implementing office policies and procedures</span></li><li><span class="ph">Monitored office inventory levels and placed orders as necessary</span></li><li><span class="ph">Coordinated office space planning and layout</span></li><li><span class="ph">Handled office communications,including email,phone</span></li</ul></div></div></section>
+<div class="job"><h3>Trainee Staff Assistant, Health &amp; Safety</h3><div class="org">Brandix Lingerie – Wathupitiwala</div><div class="date">Sep 2021 – May 2022</div><ul>
+<li>Advised employees on safety-related topics.</li>
+<li>Prepared reports on accidents and violations.</li>
+<li>Assisted with enforcement of Covid-19 regulations and guidance where necessary.</li>
+<li>Checked for protocol violations and took the necessary actions.</li>
+<li>Handled new recruits' personal files and prepared employee information.</li>
+<li>Prepared reports for easier analysis in the recruitment process.</li></ul></div>
 
-<section><div class="wrap"><div class="card"><h3><span class="ph">Trainee Staff Assistant in Health & Safety</span>, <span class="ph">Brandix Lingerie – Wathupitiwala</span> <span class="ph">From September 2021 to May 2022 </span></h3><ul><li>Advice employees on various safety-related topics.</li><li>Prepare reports on accidents and violations .</li><li>Assist in taking enforcement action of Covid- 19 regulations or guidance where necessary.</li><li>Check-up the protocol violation and take necessary actions</li><li>Handling new recruits' personal files.</li><li>Preparation of the employee information</li><li><span class="ph">Reports	for	easy	analysis	for	the recruitment process</span></ul></div></div></section> 
+<div class="job"><h3>Volunteer HR Intern, Recruitment</h3><div class="org">Brandix Lingerie – Wathupitiwala</div><div class="date">Jun 2021 – Sep 2021</div><ul>
+<li>Updated new employee details on the HRIS as part of the recruitment team.</li>
+<li>Issued EPF numbers, appointment letters, bar codes, QR codes and BOI passes to new employees.</li>
+<li>Prepared the interview process and coordinated examinations and assessments.</li>
+<li>Carried out safety visits, identified hazards within the factory and took the necessary actions.</li>
+<li>Assisted in developing and implementing office policies and procedures.</li></ul></div>
+</div></div></section>
 
- <section><div class="wrap"><div class="card"><h3><span class="ph">Volunteer HR Intern in Recruitment Section</span>, <span class="ph">Brandix Lingerie – Wathupitiwala</span> <span class="ph">From June 2021 to September 2021 </span></h3><ul><li>As an intern at the recruitment team updating new employee details on HRIS.</li><li>Issuance of EPF numbers, Appointment letters, Bar codes, QR codes, and BOI Passes to new employees.</li><li>Preparationof the interview process.</li><li>Check-up the protocol violation and take necessary actions</li><li>Coordination examinations and assessment process.</li><li>Safety visits and identifying the hazards within the factory and taking necessary actions.</li><li><span class="ph">Assisted in developing and implementing office policies and procedures</span></ul></div></div></section> 
+<section><div class="wrap"><h2>Education &amp; Certifications</h2><div class="card">
+<div class="edu"><b>Professional Diploma in Supply Chain Management</b><span>CINEC Campus · 2025 – Present</span></div>
+<div class="edu"><b>Post Graduate Diploma in Labour Relations &amp; HRM</b><span>University of Colombo · 2024 – 2025</span></div>
+<div class="edu"><b>Higher Diploma in Information Technology</b><span>University of Colombo · 2017 – 2019</span></div>
+<div class="edu"><b>Diploma in ICT &amp; Computing</b><span>IDM Campus · 2014 – 2015</span></div>
+<div class="edu"><b>Advanced Level – Biology</b><span>Veyangoda Central College · 2013</span></div>
+</div></div></section>
 
-<section><div class="wrap"><h2>Education &amp; Certifications</h2><div class="card"><p><span class="ph">Proffesional Diploma in Supply Chain Management | CINEC Campus | 2025 to now  </span></p><p><span class="ph">Post Graduate Diploma in Labor Relations& HRM |University of Colombo | 2024 to 2025</span></p><p><span class="ph">Higher Diploma in Information Technology |University of Colombo | 2017 to 2019</span></p><span class="ph">Diploma in ICT & Computing  |IDM Campus | 2014 to 2015</span></p></p><span class="ph">Adavanced Level - Biology  |Veyangoda Central College | 2013 </span></p></div></div></section>
-
-<footer><b>Let’s connect</b><br><span class="ph">devnibandara@gmail.com</span> · <span class="ph">https://www.linkedin.com/in/devni-bandara-ab9047243?utm_source=share_via&utm_content=profile&utm_medium=member_android</span> · <span class="ph">https://github.com/Dev-P-001</span> · <span class="ph"></span></footer>
+<footer><b>Let’s connect</b><br><br>
+<a href="mailto:devnibandara@gmail.com">devnibandara@gmail.com</a>
+<a href="https://www.linkedin.com/in/devni-bandara-ab9047243">LinkedIn</a>
+<a href="https://github.com/Dev-P-001">GitHub</a></footer>
 </body></html>

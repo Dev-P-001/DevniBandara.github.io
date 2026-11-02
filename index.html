@@ -104,7 +104,8 @@
             transition: .2s
         }
 
-        .btn:hover {
+        button.btn{border:0;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn:hover {
             background: #fff;
             transform: translateY(-2px)
         }
@@ -330,61 +331,21 @@
             }
         }
 
-        @media print {
-            @page {
-                size: A4;
-                margin: 0
-            }
-
-            body {
-                font-size: 10.5px
-            }
-
-            .hero {
-                padding: 32px 36px 28px
-            }
-
-            .hero h1 {
-                font-size: 30px
-            }
-
-            .btn {
-                display: none
-            }
-
-            section {
-                padding: 18px 36px
-            }
-
-            h2 {
-                font-size: 18px;
-                margin-bottom: 14px
-            }
-
-            .card,
-            .job,
-            .edu {
-                break-inside: avoid;
-                box-shadow: none
-            }
-
-            .card {
-                padding: 12px
-            }
-
-            .job {
-                margin-bottom: 14px
-            }
-
-            footer {
-                padding: 18px
-            }
-
-            * {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact
-            }
-        }
+        @media print{
+@page{size:A4;margin:14mm 0}
+@page:first{margin:0 0 14mm}
+body{font-size:10.5px;line-height:1.5}
+*{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.btn{display:none}
+.hero{padding:30px 40px 26px}.hero h1{font-size:30px}.hero .lead{font-size:11.5px}.tag{margin-top:10px}
+section{padding:14px 40px;background:#fff!important}
+h2{font-size:17px;margin-bottom:12px;break-after:avoid}
+.cards{gap:12px}.card{flex:1 1 44%;padding:12px;box-shadow:none;transform:none;break-inside:avoid}
+.card h3{font-size:12.5px}.card p,.card li{font-size:10px}
+.job{margin-bottom:12px;break-inside:avoid}.job li{font-size:10px;margin:2px 0}
+.edu{padding:6px 0;break-inside:avoid}
+footer{padding:16px;break-inside:avoid}
+}
     </style>
 </head>
 
@@ -398,7 +359,7 @@
                 Excel/VBA, SAP, WMS exports and web development.</p>
             <span class="tag">Data Analysis</span><span class="tag">Supply Chain</span><span
                 class="tag">Automation</span><br>
-            <a class="btn" href="Portfolio.pdf" download>Download PDF Portfolio</a>
+            <button class="btn" type="button" onclick="window.print()">Download PDF Portfolio</button>
         </div>
     </header>
 
@@ -596,6 +557,7 @@
                 <a href="https://www.linkedin.com/in/devni-bandara-ab9047243">LinkedIn</a>
                 <a href="https://github.com/Dev-P-001">GitHub</a>
             </footer>
+<script>(function(){var t=document.title;window.addEventListener("beforeprint",function(){document.title="Devni-Bandara-Portfolio"});window.addEventListener("afterprint",function(){document.title=t})})();</script>
 </body>
 
 </html>

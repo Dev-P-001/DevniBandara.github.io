@@ -321,6 +321,26 @@
             color: #fff
         }
 
+        .proj-link {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: .86rem;
+            font-weight: 600;
+            color: var(--navy2);
+            text-decoration: none;
+            border-bottom: 2px solid var(--gold)
+        }
+
+        .proj-link:hover {
+            color: var(--gold)
+        }
+
+        @media (prefers-color-scheme:dark) {
+            :root:not([data-theme="light"]) .proj-link {
+                color: var(--gold)
+            }
+        }
+
         footer a {
             color: var(--gold);
             text-decoration: none;
@@ -542,6 +562,8 @@
                         tracking, and customizable savings goals. Users can set their own target amount and challenge
                         duration, allowing them to adjust the savings plan according to their preferences.</p>
                     <div class="stack">Web app · Supabase</div>
+                    <a class="proj-link" href="https://shell-saving-site.netlify.app/" target="_blank"
+                        rel="noopener noreferrer">View live app &rarr;</a>
                 </div>
             </div>
         </div>
